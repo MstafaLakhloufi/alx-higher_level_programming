@@ -1,5 +1,22 @@
 #!/usr/bin/python3
-"""Defines a nqueens"""
+"""Defines the nqueens.
+
+Determines all possible solutions to placing N
+N non-attacking queens on an NxN chessboard.
+
+Example:
+    $ ./101-nqueens.py N
+
+N must be an integer greater than or equal to 4.
+
+Attributes:
+    board (list): A list of lists representing the chessboard.
+    solutions (list): A list of lists containing solutions.
+
+Solutions are represented in the format [[r, c], [r, c], [r, c], [r, c]]
+where `r` and `c` represent the row and column, respectively, where a
+queen must be placed on the chessboard.
+"""
 import sys
 
 
@@ -12,14 +29,14 @@ def init_board(n):
 
 
 def board_deepcopy(board):
-    """Returns a deepcopy of a chessboard."""
+    """Return a deepcopy of a chessboard."""
     if isinstance(board, list):
         return list(map(board_deepcopy, board))
     return (board)
 
 
 def get_solution(board):
-    """Returns the list of lists representation of a solved chessboard."""
+    """Return the list of lists representation of a solved chessboard."""
     solution = []
     for r in range(len(board)):
         for c in range(len(board)):
