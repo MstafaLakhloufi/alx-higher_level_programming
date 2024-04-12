@@ -3,14 +3,8 @@ The ``2-matrix_divided`` module
 
 Using ``matrix_divided``
 ---------------------
-Checks if all matrix items are ints or floats
-Checks if length of lists in matrix are same
-Checks if div is a float or int or 0
-Divides all items in matrix by div
-Returns a new matrix
 
-First import ``matrix_divided``
-
+Import module:
     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 Test normal matrix:
