@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""Defines a Base class """
+"""Defines a Base class."""
 
 class Base:
-    """Represents the base model """
+    """Represents the base model."""
 
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Constructor"""
+        """Constructor."""
         if id is not None:
             self.id = id
         else:
